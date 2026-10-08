@@ -35,10 +35,10 @@ st.markdown("""
 
 @st.cache_resource
 def load_artifacts():
-    regressor = joblib.load('svr_model_audi_cars.pkl')
-    ct = joblib.load('ct_svr.pkl')
-    sc_X = joblib.load('sc_X_svr.pkl')
-    sc_y = joblib.load('sc_y_svr.pkl')
+    regressor = joblib.load('model/svr_model_audi_cars.pkl')
+    ct = joblib.load('model/ct_svr.pkl')
+    sc_X = joblib.load('model/sc_X_svr.pkl')
+    sc_y = joblib.load('model/sc_y_svr.pkl')
     return regressor, ct, sc_X, sc_y
 
 regressor, ct, sc_X, sc_y = load_artifacts()
